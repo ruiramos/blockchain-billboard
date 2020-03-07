@@ -33,7 +33,8 @@ contract Billboard {
   }
 
   function calcTime(uint _value) internal pure returns (uint){
-    return (_value / 10**18) * 1 weeks;
+
+    return (_value / 10**15) * 1 seconds;
   }
 
   function getTimeLeft() public view returns (uint){

@@ -1,0 +1,31 @@
+<html>
+  <style>
+    h1.message {
+      text-align: center;
+    }
+    h2.empty {
+      text-align: center;
+      font-style: italic;
+      display: none;
+    }
+    small.date {
+      display: block;
+      text-align: center;
+    }
+  </style>
+<body>
+  <h1 class="message" data-hook="message"></h1>
+  <h2 class="empty" data-hook="empty-message">no message currently set!</h2>
+  <small class="date" data-hook="date"></small>
+
+  <form data-hook="form" action="">
+    <input type="text" name="message" placeholder="message">
+    <input type="text" name="value" placeholder="value">
+    <input type="submit" value="Bid" data-hook="bid-button">
+  </form>
+
+  <p data-hook="debug"></p>
+
+  <script src="./index.js"></script>
+</body>
+</html>
